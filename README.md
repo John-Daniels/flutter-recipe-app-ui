@@ -1,5 +1,9 @@
 # food_recipe_app
 
+## Showcasing Yummy dishes
+
+![showcase](./showcase/screensot.png)
+
 A new Flutter project.
 
 ## Getting Started
