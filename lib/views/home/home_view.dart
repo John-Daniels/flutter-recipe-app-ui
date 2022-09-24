@@ -66,6 +66,15 @@ class _HomeViewState extends State<HomeView> {
                             cookTime: recipe.totalTime,
                             rating: recipe.rating.toString(),
                             thumbnailUrl: recipe.images,
+                            onPressed: () {
+                              //do something
+                              // Navigator.of(context).push(
+                              //   MaterialPageRoute(
+                              //     builder: (context) =>
+                              //         RecipeView(recipe: recipe),
+                              //   ),
+                              // );
+                            },
                           );
                         }),
                   )
