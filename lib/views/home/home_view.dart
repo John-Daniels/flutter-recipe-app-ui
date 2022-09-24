@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_recipe_app/views/home/widgets/recipe_card.dart';
+import 'package:food_recipe_app/views/recipe/recipe_view.dart';
 
 import '../../models/recipe.api.dart';
 import '../../models/recipe.dart';
@@ -66,6 +67,15 @@ class _HomeViewState extends State<HomeView> {
                             cookTime: recipe.totalTime,
                             rating: recipe.rating.toString(),
                             thumbnailUrl: recipe.images,
+                            onPressed: () {
+                              //do something
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) =>
+                                      RecipeView(recipe: recipe),
+                                ),
+                              );
+                            },
                           );
                         }),
                   )
